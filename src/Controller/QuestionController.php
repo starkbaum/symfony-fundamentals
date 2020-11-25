@@ -47,16 +47,16 @@ class QuestionController extends AbstractController
      * @return Response
      * @throws \Exception
      */
-    public function show($slug, MarkdownHelper $markdownHelper, bool $isDebug, HubInterface $sentryHub)
+    public function show($slug, MarkdownHelper $markdownHelper, bool $isDebug)
     {
         //dump($this->getParameter('cache_adapter'));
-        dump($sentryHub);
+        //dump($sentryHub);
 
         if ($this->isDebug) {
             $this->logger->info('We are in debug mode!');
         }
 
-        throw new \Exception('bad stuff happend!');
+        //throw new \Exception('bad stuff happend!');
 
         $answers = [
             'Make sure your cat is sitting `purrrfectly` still 🤣',
